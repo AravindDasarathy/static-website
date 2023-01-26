@@ -1,0 +1,65 @@
+@use '../base/helper';
+
+.travel-to-explore-desc {
+  width: helper.calculate-width(3.5);
+}
+
+.explore-now-button {
+  width: 125px;
+  height: 43px;
+  border-radius: 5px;
+}
+
+// gradiant-background-image mixin is used to generate an image based on alpha and file name parameter.
+.beach {
+  @include helper.gradiant-background-image(0.3, 'beach');
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  height: 550px;
+}
+
+h1[class="image-text"] {
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 4px;
+  margin-top: 7%;
+  margin-bottom: 1%;
+}
+
+/* by using placeholder pseudo class for all children of input tag,
+   all the placeholders are center aligned. */
+.form {
+  font-size: 0.9em;
+  background-color: helper.$transparent-white-colour;
+  border-radius: 5px;
+  width: helper.calculate-width(2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+
+  input {
+    fill: none;
+    background: transparent;
+    border: none;
+
+    &::placeholder {
+      text-align: center;
+    }
+  }
+}
+
+.form-input-div {
+  background-color: transparent;
+  padding-top: 3px;
+}
+
+.fields {
+  border: 0px;
+}
+
+.input-fields {
+  border-right: 1px solid lightgray;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent;
+}

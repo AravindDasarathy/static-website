@@ -1,0 +1,15 @@
+/*
+  * The main/entry file of the SASS folder structure.
+  * @use is used instead of @import for preventing global imports.
+  */
+
+@use 'base/helper';
+
+@use 'framework/common';
+@use 'framework/nav';
+@use 'framework/beach';
+@use 'framework/travel-features';
+@use 'framework/destinations';
+@use 'framework/blogs';
+@use 'framework/customer-feedback';
+@use 'framework/footer';

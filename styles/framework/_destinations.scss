@@ -1,0 +1,43 @@
+@use '../base/helper';
+
+.destination-suggestion-div {
+  width: helper.calculate-width(1.5);
+  margin: auto;
+}
+
+.destination-div {
+  padding-top: 2%;
+}
+
+.destination-section {
+  padding-bottom: 5%;
+}
+
+// box-shadow mixin generates shadow for elements based on input properties.
+.destination-pic {
+  border-radius: 15px;
+  @include helper.box-shadow(5px, 5px, 5px, 0.1);
+}
+
+.destination-description {
+  font-size: 1.1em;
+}
+
+.trip-details {
+  padding-top: 2%;
+}
+
+.trip-cost-details {
+  text-align: right;
+}
+
+.trip-cost {
+  font-size: 1.4em;
+  padding-bottom: 1%;
+}
+
+h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-weight: normal;
+}

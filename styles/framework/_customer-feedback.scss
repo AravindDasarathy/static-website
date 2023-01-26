@@ -1,0 +1,40 @@
+@use '../base/helper';
+
+.customer-feedback-div {
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+// box-shadow mixin generates shadow for elements based on input properties.
+.customer-feedback-section {
+  @include helper.box-shadow(5px, 25px, 25px, 0.05);
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+  width: helper.calculate-width(2.3);
+}
+
+.customer-comments {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  margin-top: 2%;
+}
+
+.customer-div {
+  width: helper.calculate-width(2);
+}
+
+.customer-image {
+  width: helper.calculate-width(4);
+}
+
+.customer-font {
+  font-size: 1.2em;
+  margin-top: 1%;
+}
+
+.customer-company {
+  color: #858485;
+  margin-bottom: 10%;
+}

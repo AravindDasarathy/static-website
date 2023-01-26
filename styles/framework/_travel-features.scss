@@ -1,0 +1,34 @@
+@use '../base/helper';
+
+.travel-features {
+  margin-top: 6%;
+  margin-bottom: 5%;
+}
+
+// box-shadow mixin generates shadow for elements based on input properties.
+.figure-section {
+  @include helper.box-shadow(5px, 25px, 25px, 0.03);
+  border-radius: 10px;
+  height: 200px;
+  flex-basis: helper.calculate-width(4.8);
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.figure-image {
+  display: block;
+}
+
+// justify-text placeholder justifies the text present inside a block element.
+.travel-features-title {
+  @extend %justify-text;
+  margin-top: 3%;
+  margin-bottom: 6%;
+  font-size: 1.1em;
+}
+
+// justify-text placeholder justifies the text present inside a block element.
+.travel-features-desc {
+  @extend %justify-text;
+  font-size: 0.9em;
+}

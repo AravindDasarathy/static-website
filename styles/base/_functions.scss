@@ -1,0 +1,11 @@
+@use 'sass:math';
+
+/// Computes the width of the component in percentage.
+///
+/// @param {number} $number
+///   100/`$number` determines width of the image. It's default value is 1.
+/// @return {number} width percentage corresponding to the input parameter.
+
+@function calculate-width ($number: 1) {
+  @return math.percentage(math.div(1, $number));
+}

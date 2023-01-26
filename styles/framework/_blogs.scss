@@ -1,0 +1,61 @@
+@use '../base/helper';
+
+.blogs-div {
+  @extend %auto-margin;
+  width: 80%;
+  margin-bottom: 5%;
+  display: flex;
+  align-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 340px;
+
+  h3 {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10%;
+  }
+}
+
+.blogs-two-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+// gradiant-background-image mixin is used to generate an image based on alpha and file name parameter.
+.kilimanjaro {
+  @include helper.gradiant-background-image(0.3, 'kilimanjaro');
+  @extend %blog-image;
+  height: 340px;
+  width: 100%;
+
+  h3 {
+    padding-top: 25%;
+  }
+}
+
+// gradiant-background-image mixin is used to generate an image based on alpha and file name parameter.
+.aeroplane {
+  @include helper.gradiant-background-image(0.3, 'aeroplane');
+  @extend %blog-image;
+  height: 160px;
+  width: 100%;
+}
+
+// gradiant-background-image mixin is used to generate an image based on alpha and file name parameter.
+.taj-mahal {
+  @include helper.gradiant-background-image(0.3, 'taj-mahal');
+  @extend %blog-image;
+  height: 160px;
+  width: 100%;
+}
+
+// calculate-width function returns the width of the element for equal spacing between other elements.
+.blog-title {
+  font-size: 1.5em;
+  width: helper.calculate-width(2);
+}

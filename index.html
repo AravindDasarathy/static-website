@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travelo</title>
+    <link rel="stylesheet" href="dist/index.css">
+  </head>
+
+  <body>
+
+    <!-- Top menu bar -->
+    <section class="flex-container nav-section">
+
+      <!-- travelo logo at top left of the screen -->
+      <div class="destination-width flex-item">
+        <a href="#">
+          <img src="assets/travelo.png" width="75" height="20">
+        </a>
+      </div>
+
+      <!-- menu bar that contains basic navigation elements -->
+      <div class="flex-item">
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Places</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </nav>
+      </div>
+
+      <div class="flex-item">
+        <button type="button" class="website-button">Connect</button>
+      </div>
+    </section>
+
+    <!-- Main body image of the first page -->
+    <section class="page-start">
+
+      <!-- background beach pic -->
+      <article class="beach">
+
+        <section>
+          <h1 class="image-text">TRAVEL TO EXPLORE</h1>
+        </section>
+
+        <section>
+          <h3 class="center image-text travel-to-explore-desc">
+            Consectetur veniam enim duis Lorem cillum anim et tempor aliqua
+            aute occaecat voluptate incididunt.
+          </h3>
+        </section>
+
+        <!-- A simple form section to check travel dates and venue-->
+        <section class="form">
+          <form method="get" action="#">
+            <fieldset class="fields">
+              <div class="flex-container">
+                <section class="input-fields center">
+                  <label for="location">Where You Want to go</label>
+
+                  <div class="form-input-div">
+                    <input type="text" name="location" id="location" required minlength="3" placeholder="Seach your Location">
+                  </div>
+                </section>
+
+                <section class="input-fields center">
+                  <label for="check-in">Check-in</label>
+
+                  <div class="form-input-div">
+                    <input type="text" name="check-in" id="check-in" required
+                    placeholder="Add Date" onfocus="(this.type = 'date')" onblur="(this.type='text')">
+                  </div>
+                </section>
+
+                <section class="input-fields center">
+                  <label for="check-out">Check-out</label>
+
+                  <div class="form-input-div">
+                    <input type="text" name="check-out" id="check-out" required
+                    placeholder="Add Date" onfocus="(this.type = 'date')" onblur="(this.type='text')">
+                  </div>
+                </section>
+
+                <section>
+                  <button type="submit" class="website-button explore-now-button">Explore Now</button>
+                </section>
+              </div>
+            </fieldset>
+          </form>
+        </section>
+
+      </article>
+
+      <!-- Rewards, covid, payment, nearby - travel features section -->
+      <article class="flex-container travel-features">
+
+        <!-- Rewards section-->
+        <section class="figure-section">
+          <figure>
+            <img class="figure-image" src="assets/rewards.png" width="80px" height="80px">
+            <figcaption>
+              <h3 class="travel-features-title">Get Best Prices</h3>
+              <div class="travel-features-desc">
+                Pay through our application and save thousands and get amazing rewards
+              </div>
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- Covid Safe section-->
+        <section class="figure-section">
+          <figure>
+            <img class="figure-image" src="assets/covid.png" width="80px" height="80px">
+            <figcaption>
+              <h3 class="travel-features-title">Covid Safe</h3>
+              <div class="travel-features-desc">
+                We have all the curated hotels that have all the precaution for a covid safe environment
+              </div>
+            </figcaption>
+          </figure>
+        </section>
+
+       <!-- Flexible payment section -->
+        <section class="figure-section">
+          <figure>
+            <img class="figure-image" src="assets/rewards.png" width="80px" height="80px">
+            <figcaption>
+              <h3 class="travel-features-title">Flexible Payment</h3>
+              <div class="travel-features-desc">
+                Enjoy the flexible payment through our app and get rewards on every payment
+              </div>
+            </figcaption>
+          </figure>
+        </section>
+
+        <!-- Nearby hotels section -->
+        <section class="figure-section">
+          <figure>
+            <img class="figure-image" src="assets/rewards.png" width="80px" height="80px">
+            <figcaption>
+              <h3 class="travel-features-title">Find The Best Near You</h3>
+              <div class="travel-features-desc">
+                Find the best hotels and places to visit near you in a single click
+              </div>
+            </figcaption>
+          </figure>
+        </section>
+      </article>
+
+    </section>
+
+    <!-- Main body of the second page - recommended destinations -->
+    <section class="page-start">
+      <h1 class="center section-title">Recommended Destination</h1>
+
+      <!-- Destination suggestion section -->
+      <div class="destination-suggestion-div">
+        <nav class="flex-container">
+          <a href="#">The Weekend Break</a>
+          <a href="#">The Package Holiday</a>
+          <a href="#">The Group Tour</a>
+          <a href="#">Long Term Slow Travel</a>
+        </nav>
+      </div>
+
+      <div class="destination-div flex-container">
+
+        <!-- Singapore details -->
+        <section class="destination-width destination-section flex-three-items">
+          <div>
+            <img class="destination-pic" src="assets/destinations/singapore.png" width="100%">
+          </div>
+
+          <h2>Singapore</h2>
+
+          <!-- destination description -->
+          <div class="destination-description">
+            Singapore, officially the Republic of Singapore, is a soverign island city-state
+            in maritime Southeast.
+          </div>
+
+          <!-- trip distance and cost -->
+          <div class="trip-details">
+            <div class="div-half">
+              <img src="assets/trip-cost.png" width="100" height="30">
+              <div>1000 km</div>
+            </div>
+
+            <div class="div-half trip-cost-details">
+              <div class="trip-cost">Rs. 38,800</div>
+              Approx 2 night trip
+            </div>
+          </div>
+        </section>
+
+        <!-- Thailand details -->
+        <section class="destination-width destination-section flex-three-items">
+          <div>
+            <img class="destination-pic" src="assets/destinations/thailand.png" width="100%">
+          </div>
+
+          <h2>Thailand</h2>
+
+          <!-- destination description -->
+          <div class="destination-description">
+            Thailand is a Southeast Asian country. It's known for tropical beaches,
+            opulent royal palaces.
+          </div>
+
+          <!-- trip distance and cost -->
+          <div class="trip-details">
+            <div class="div-half">
+              <img src="assets/trip-cost.png" width="100" height="30">
+              <div>1000 km</div>
+            </div>
+
+            <div class="div-half trip-cost-details">
+              <div class="trip-cost">Rs. 38,800</div>
+              Approx 2 night trip
+            </div>
+          </div>
+        </section>
+
+
+        <!-- Paris details -->
+        <section class="destination-width destination-section flex-three-items">
+          <div>
+            <img class="destination-pic" src="assets/destinations/paris.png" width="100%">
+          </div>
+          <h2>Paris</h2>
+
+          <!-- destination description -->
+          <div class="destination-description">
+            Paris, France's capital, is a major European city and a global center for
+            art, fashion, gastronomy.
+          </div>
+
+          <!-- trip distance and cost -->
+          <div class="trip-details">
+            <div class="div-half">
+              <img src="assets/trip-cost.png" width="100" height="30">
+              <div>1000 km</div>
+            </div>
+
+            <div class="div-half trip-cost-details">
+              <div class="trip-cost">Rs. 38,800</div>
+              Approx 2 night trip
+            </div>
+          </div>
+        </section>
+
+        <!-- New Zealand details -->
+        <section class="destination-width destination-section flex-three-items">
+          <div>
+            <img class="destination-pic" src="assets/destinations/new-zeland.png" width="100%">
+          </div>
+          <h2>New Zealand</h2>
+
+          <!-- destination description -->
+          <div class="destination-description">
+            New Zealand is an island country is the southwestern Pacific Ocean.
+          </div>
+
+          <!-- trip distance and cost -->
+          <div class="trip-details">
+            <div class="div-half">
+              <img src="assets/trip-cost.png" width="100" height="30">
+              <div>1000 km</div>
+            </div>
+
+            <div class="div-half trip-cost-details">
+              <div class="trip-cost">Rs. 38,800</div>
+              Approx 2 night trip
+            </div>
+          </div>
+        </section>
+
+        <!-- Bora Bora details -->
+        <section class="destination-width destination-section flex-three-items">
+          <div>
+            <img class="destination-pic" src="assets/destinations/bora-bora.png" width="100%">
+          </div>
+          <h2>Bora Bora</h2>
+
+          <!-- destination description -->
+          <div class="destination-description">
+            Bora Bora is a small South Pacific island northwest of Tahiti
+            in French Polynesia.
+          </div>
+
+          <!-- trip distance and cost -->
+          <div class="trip-details">
+            <div class="div-half">
+              <img src="assets/trip-cost.png" width="100" height="30">
+              <div>1000 km</div>
+            </div>
+
+            <div class="div-half trip-cost-details">
+              <div class="trip-cost">Rs. 38,800</div>
+              Approx 2 night trip
+            </div>
+          </div>
+        </section>
+
+        <!-- London details -->
+        <section class="destination-width destination-section flex-three-items">
+          <div>
+            <img class="destination-pic" src="assets/destinations/london.png" width="100%">
+          </div>
+
+          <h2>London</h2>
+
+          <!-- destination description -->
+          <div class="destination-description">
+            London, the capital of England and the United Kingdom,
+            is a 21st century city.
+          </div>
+
+          <!-- trip distance and cost -->
+          <div class="trip-details">
+            <div class="div-half">
+              <img src="assets/trip-cost.png" width="100" height="30">
+              <div>1000 km</div>
+            </div>
+
+            <div class="div-half trip-cost-details">
+              <div class="trip-cost">Rs. 38,800</div>
+              Approx 2 night trip
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+    <!-- Main body of the third page - blogs -->
+    <section class="page-start">
+      <h1 class="center section-title">Blogs</h1>
+
+      <!-- Contains blogs -->
+      <div class="blogs-div">
+        <!-- Blog about Kilimanjaro -->
+        <div class="flex-two-items">
+          <div class="kilimanjaro">
+            <section>
+              <h3 class="image-text blog-title">
+                The Ultimate Guide to Climbing Mount Kilimanjaro
+              </h3>
+            </section>
+          </div>
+        </div>
+
+        <!-- Blog about New Traveler  -->
+        <div class="blogs-two-div flex-two-items">
+          <div class="aeroplane">
+            <section>
+              <h3 class="image-text blog-title">
+                12 Things I'd Tell Any New Traveler
+              </h3>
+            </section>
+          </div>
+
+          <!-- Blog about Packling List for Female Travelers -->
+          <div class="taj-mahal">
+            <section>
+              <h3 class="image-text blog-title">
+                The Ultimate Packing List for Female Travelers
+              </h3>
+            </section>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main body of the fourth page - Customer Feedback -->
+    <section class="page-start">
+      <h1 class="center section-title">Happy Customers</h1>
+
+      <div class="customer-feedback-div flex-container">
+        <section class="customer-feedback-section">
+          <div class="customer-comments">
+            Ea sint elit ullamco exercitation adipisicing. Aliqua ipsum sint aliquip quis velit
+            nostrud elit ullamco laborum duis et sit Lorem. Dolore non adipisicing aliquip ad irure
+            aute dolore pariatur. Reprehenderit reprehenderit cupidatat eu labore do non.
+            Cupidatat laboris minim do velit fugiat Lorem mollit elit nisi officia.
+          </div>
+
+          </br>
+
+          <div class="customer-div">
+            <div class="customer-image"><img src="assets/customer.png" width="60px"></div>
+            <div class="customer-font">Shalini Singh</div>
+            <div class="customer-font customer-company">Project Manger Flyhigh</div>
+          </div>
+        </section>
+
+        <section class="customer-feedback-section">
+          <div class="customer-comments">
+            Ea sint elit ullamco exercitation adipisicing. Aliqua ipsum sint aliquip quis velit
+            nostrud elit ullamco laborum duis et sit Lorem. Dolore non adipisicing aliquip ad irure
+            aute dolore pariatur. Reprehenderit reprehenderit cupidatat eu labore do non.
+            Cupidatat laboris minim do velit fugiat Lorem mollit elit nisi officia.
+          </div>
+
+          </br>
+
+          <div class="customer-div">
+            <div class="customer-image"><img src="assets/customer.png" width="60px"></div>
+            <div class="customer-font">Shalini Singh</div>
+            <div class="customer-font customer-company">Project Manger Flyhigh</div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="page-start footer-start">
+      <div class="footer-div flex-container">
+        <!-- copyright at bottom left of the screen -->
+        <div class="flex-three-items">
+          <div>
+            Copyright @ 2020 Travelo. All rights reserved
+          </div>
+        </div>
+
+        <!-- menu bar that contains basic navigation elements -->
+        <div class="flex-three-items">
+          <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Places</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+          </nav>
+        </div>
+
+        <div class="flex-three-items">
+          <img src="assets/instagram.png" class="footer-icons" height="33px">
+          <img src="assets/linkedIn.png" class="footer-icons"height="30px">
+          <img src="assets/facebook.png" class="footer-icons"height="30px">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

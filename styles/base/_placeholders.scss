@@ -1,0 +1,33 @@
+@use './functions';
+
+/* A placeholder to generate basic flex properties. */
+%flex-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* A placeholder to set margin left and right as auto. */
+%auto-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* A placeholder to center an element with respect to its parent element. */
+%center {
+  display: block;
+  @extend %auto-margin;
+}
+
+// A placeholder to justify text within an element.
+%justify-text {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* A placeholder to fix the properties of images in the blog section. */
+%blog-image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: functions.calculate-width(1.25);
+  border-radius: 5px;
+}

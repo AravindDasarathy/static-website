@@ -1,0 +1,45 @@
+@use './variables' as vars;
+
+/// Generates flex-wrap property based on the input parameter.
+///
+/// @param {bool} $should-wrap
+///   A boolean value that decides if the wrap property needs to be generated.
+///
+
+@mixin wrap($should-wrap: false) {
+  @if $should-wrap {
+    flex-wrap: wrap;
+  } @else {
+    flex-wrap: nowrap;
+  }
+}
+
+/// Generates a background-image property.
+/// and controls the black shade of the image based on the input parameters.
+///
+/// @param {number (unitless)} $alpha
+///   A number to control the alpha or transparency component of the image.
+/// @param {string} $image-url
+///   A string that contains the file name and the extension. Ex - 'kilimanjaro.png'.
+///
+
+@mixin gradiant-background-image($alpha, $image-name) {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, $alpha), rgba(0, 0, 0, $alpha)),
+    url('#{vars.$assets-base-path}/#{$image-name}.png');
+}
+
+/// Generates a box-shadow property based on input parameters.
+///
+/// @param {number} $x
+///   A number that controls the offset-x value.
+/// @param {number} $y
+///   A number that controls the offset-y value.
+/// @param {integer (unitless)} $blur
+///   A number that controls the blur or fade-away effect.
+/// @param {number} $alpha
+///   A number to control the alpha or transparency component of the colour.
+
+@mixin box-shadow($x, $y, $blur, $alpha) {
+  box-shadow: $x $y $blur rgba(0, 0, 0, $alpha);
+}

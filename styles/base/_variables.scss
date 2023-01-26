@@ -1,0 +1,17 @@
+// a variable to set the font style to apply throughout the website.
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// a variable to hold a transparent black colour.
+$alpha-black-colour: rgba(0, 0, 0, 0.3);
+
+// a variable to hold a transparent white colour.
+$transparent-white-colour: rgba(255, 255, 255, 0.7);
+
+// a beach image with a gradiant black shade
+$beach-image: linear-gradient($alpha-black-colour, $alpha-black-colour), url('../assets/beach.png');
+
+// a variable created to create classes using 'each' loop.
+$item-count: ("two": 2, "three": 3.2);
+
+//assets base path
+$assets-base-path: '../assets' !default;
