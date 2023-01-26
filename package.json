@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start": "sass styles/main.scss dist/index.css && open index.html"
+  },
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
